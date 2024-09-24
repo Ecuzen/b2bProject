@@ -21,6 +21,9 @@ use Illuminate\Support\Facades\Schema;
 
 class Admin extends Controller
 {
+    function git(){
+        return "j";
+    }
     protected function common()
     {
         $title = DB::table('settings')->where('name', 'title')->first()->value;
